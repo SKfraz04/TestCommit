@@ -1,0 +1,23 @@
+{
+  "name": "commitbot",
+  "version": "1.0.0",
+  "main": "test.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N0Ls/CommitBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/N0Ls/CommitBot/issues"
+  },
+  "homepage": "https://github.com/N0Ls/CommitBot#readme",
+  "description": ""
+}
