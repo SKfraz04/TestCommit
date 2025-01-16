@@ -13,11 +13,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/N0Ls/CommitBot.git"
+    "url": "git+https://github.com/SKfraz04/TestCommit.git.git"
   },
   "bugs": {
-    "url": "https://github.com/N0Ls/CommitBot/issues"
+    "url": "https://github.com/SKfraz04/TestCommit.git/issues"
   },
-  "homepage": "https://github.com/N0Ls/CommitBot#readme",
+  "homepage": "https://github.com/SKfraz04/TestCommit.git#readme",
   "description": ""
 }

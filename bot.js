@@ -45,7 +45,7 @@ async function commitBot() {
     //Checking validity of repo
     if(!repo.startsWith("https://")){
       console.log("\nPLEASE ENTER THE FULL REPOSITORY URL");
-      console.log("For example : https://github.com/N0Ls/CommitBot");
+      console.log("For example : https://github.com/SKfraz04/TestCommit.git");
       process.exit(1);
     }
     var codeRepo = await connectionCode(repo);
@@ -93,7 +93,7 @@ async function commitBot() {
         //Commit
         var { stdout, stderr } = await exec("echo " + commit + " > gitfolder/"+repoName+"/commit.md");
         var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git add commit.md");
-        var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git commit -m 'Commit "+ (i + 1) + " made by N0Ls commit bot'");
+        var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git commit -m 'Commit "+ (i + 1) + " made by SKfraz04 commit bot'");
         console.log("-- Commit " + (i + 1) + " --");
       }
 
@@ -101,7 +101,7 @@ async function commitBot() {
       var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && rm commit.md");
       var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git gc");
       var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git add .");
-      var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git commit -m 'Final commit made by N0Ls commit bot'");
+      var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git commit -m 'Final commit made by SKfraz04 commit bot'");
 
       //Final push
       var { stdout, stderr } = await exec("cd gitfolder/"+repoName+" && git push origin master");
