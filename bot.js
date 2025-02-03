@@ -7,7 +7,7 @@ const exec = util.promisify(require('child_process').exec);
 function connectionCode(url) {
   return new Promise(function(resolve, reject) {
     https.get(url,  function(res){
-      //console.log("StatusCode: ",  res.statusCode);
+      //console.log("StatusCode: ",  res.statusCode); status check
       if (res.statusCode == 200 ) {
         resolve(res.statusCode)
       } else {
