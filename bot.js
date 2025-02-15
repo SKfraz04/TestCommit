@@ -3,7 +3,7 @@ const fs = require("fs");
 const util = require('util');
 const prompt = require('prompt-sync')();
 const exec = util.promisify(require('child_process').exec);
-
+//check
 function connectionCode(url) {
   return new Promise(function(resolve, reject) {
     https.get(url,  function(res){
